@@ -1,0 +1,12 @@
+<div *ngFor="let message of getMessages()" class="grid grid-cols-10">
+  <div class="grid col-1 col-span-2 content-start justify-items-center">
+    <img class="size-10 flex rounded-full border border-gray-100" src="../../../../assets/user-img.png"/>
+  </div>
+
+  <div class="col-start-3 col-span-8 w-full max-w-3/4 leading-1.5">
+    <div class="flex items-center space-x-2 rtl:space-x-reverse">
+      <span class="text-sm font-semibold text-black">Tú</span>
+    </div>
+    <p class="text-sm font-normal py-2 text-black">{{message}}</p>
+  </div>
+</div>

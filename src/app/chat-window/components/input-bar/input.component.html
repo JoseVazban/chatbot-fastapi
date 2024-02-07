@@ -1,0 +1,10 @@
+<form #myForm class="grid grid-cols-10 gap-2" (ngSubmit)="onSubmit(user.value); myForm.reset()" >
+  <div class="col-start-1 col-span-8 pl-3 md:col-span-9 lg:pl-10">
+    <input #user rmatInput placeholder="Escribe algo" class="w-full p-2 border rounded" />
+  </div>
+  <div class="col-start-9 col-span-2 md:col-start-10 md:col-span-1 lg:pl-5">
+    <button mat-mini-fab>
+      <mat-icon type="submit">send</mat-icon>
+    </button>
+  </div>
+</form>

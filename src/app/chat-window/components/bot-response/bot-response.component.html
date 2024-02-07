@@ -1,0 +1,12 @@
+<div *ngFor="let message of conversation" class="grid grid-cols-10 border-r-10">
+  <div class="grid col-1 col-span-2 content-start justify-items-center">
+    <img class="size-10 flex rounded-full border border-gray-100" src="{{ message.role === 'user' ? 'assets/user-img.png' : 'assets/bot-img.png' }}"/>
+  </div>
+
+  <div class="col-start-3 col-span-8 w-full max-w-3/4 leading-1.5">
+    <div class="flex items-center space-x-2">
+      <span class="md:text-xl font-semibold text-black">{{ message.role === 'user' ? 'Tú' : 'ChatBot' }}</span>
+    </div>
+    <p class="md:text-xl pr-10 font-normal py-2 text-black">{{ message.content }}</p>
+  </div>
+</div>
